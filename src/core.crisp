@@ -1,0 +1,21 @@
+(def vau
+  (fexpr args env
+    (case (len args)
+      0 (argument-error "a binding for the argument(s)" nil)
+      1 (argument-error "a binding for the environment" nil)
+      2 (vau-2 args env)
+      3 (vau-2 args env)
+      _ (extra-args (drop args 3)))))
+
+(def vau-2g
+  (wrap
+    (fexpr args env
+      (let (fst (head args)
+            snd (head (tail args))
+            thd (head (drop args 2)))
+        (if (symbol? fst)
+          (if (symbol? snd)
+            (qq (fexpr ~fst ~snd ~thd))
+            (argument-error "Expected symbol to bind the environment to", snd))
+          ...)
+                

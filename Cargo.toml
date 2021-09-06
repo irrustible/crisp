@@ -1,0 +1,17 @@
+[package]
+name = "crisp"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# crisp-core = { path = "../crisp-core" }
+im-rc = "15.0.0"
+# nom = "7.0.0"
+# nom_locate = "3.0.2"
+# nom_locate = {git = "https://github.com/fflorent/nom_locate", branch = "master"}
+# nom-programming-syntax = "0.1.0"
+# nom-programming-syntax = { path = "../../nom_programming_syntax" }
+smartstring = "0.2.9"
+# syn = "1.0.76"
