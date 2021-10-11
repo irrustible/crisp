@@ -6,12 +6,30 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# crisp-macros = { path = "../crisp-macros" }
 # crisp-core = { path = "../crisp-core" }
-im-rc = "15.0.0"
 # nom = "7.0.0"
 # nom_locate = "3.0.2"
 # nom_locate = {git = "https://github.com/fflorent/nom_locate", branch = "master"}
 # nom-programming-syntax = "0.1.0"
 # nom-programming-syntax = { path = "../../nom_programming_syntax" }
-smartstring = "0.2.9"
 # syn = "1.0.76"
+# anyhow = "1.0.43"
+ariadne = "0.1.3"
+# async-executor = "1.4.1"
+# async-io = "1.6.0"
+# async-process = "1.2.0"
+# async-trait = "0.1.51"
+# cgc-single-threaded = "0.1.1"
+# blake3 = "0.3"
+futures-lite = "1.12.0"
+# im-rc = "15.0.0"
+# num_cpus = "1.13.0"
+# pretty = "0.10.0"
+smartstring = "0.2.9"
+# thiserror = "1.0.29"
+
+[dependencies.comet]
+# git = "https://github.com/starlight-js/comet"
+# branch = "immix"
+path = "../../forks/rust/comet"
