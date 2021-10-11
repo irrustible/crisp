@@ -19,11 +19,6 @@ use crate::prelude::*;
     }
 // }
 
-impl Literal {
-    pub fn unwrap_list(self) -> Result<List, Literal> {
-    }
-}
-
 #[derive(FinalizeTrait,TraceTrait)]
 pub struct Int {
     pub prev:  Syntax,
